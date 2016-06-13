@@ -1,0 +1,46 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline --color --progress",
+    "prd": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamcco/HomePage.git"
+  },
+  "keywords": [
+    "home",
+    "page"
+  ],
+  "author": "年糕小豆汤 <ooiss@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamcco/HomePage/issues"
+  },
+  "homepage": "https://github.com/iamcco/HomePage#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "ejs": "^2.4.2",
+    "file-loader": "^0.8.5",
+    "generate-asset-webpack-plugin": "^0.3.0",
+    "jsx-loader": "^0.13.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.4.1",
+    "style-loader": "^0.13.1",
+    "svg-react-loader": "^0.3.5",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
