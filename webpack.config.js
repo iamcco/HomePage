@@ -32,6 +32,8 @@ if(isProduction) {
         }),
         new CopyWebpackPlugin([{
             from: path.join(__dirname, 'src/images/favicon.ico')
+        }, {
+            from: path.join(__dirname, 'CNAME')
         }]),
         new webpack.DefinePlugin({
             'process.env': {
@@ -48,7 +50,14 @@ if(isProduction) {
             }
         }),
         new GhPagesWebpackPlugin({
-            path: './public'
+            path: './public',
+            message: 'Update Home Page',
+            options: {
+                user: {
+                    name: '年糕小豆汤',
+                    email: 'ooiss@qq.com'
+                }
+            }
         })
     ]);
 }
