@@ -5,6 +5,8 @@ let path = require('path');
 let ejs = require('ejs');
 let GenerateAssetPlugin = require('generate-asset-webpack-plugin');
 let CleanPlugin = require('clean-webpack-plugin');
+let CopyWebpackPlugin = require('copy-webpack-plugin');
+let GhPagesWebpackPlugin = require('gh-pages-webpack-plugin');
 
 let isProduction = process.env.NODE_ENV === 'production';
 
@@ -28,6 +30,9 @@ if(isProduction) {
             verbose: true,
             dry: false
         }),
+        new CopyWebpackPlugin([{
+            from: path.join(__dirname, 'src/images/favicon.ico')
+        }]),
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: JSON.stringify(process.env.NODE_ENV)
@@ -41,6 +46,9 @@ if(isProduction) {
             compress: {
                 warnings: false  // remove all warnings
             }
+        }),
+        new GhPagesWebpackPlugin({
+            path: './public'
         })
     ]);
 }
