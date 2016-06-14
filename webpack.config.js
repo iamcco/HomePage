@@ -51,8 +51,8 @@ if(isProduction) {
         }),
         new GhPagesWebpackPlugin({
             path: './public',
-            message: 'Update Home Page',
             options: {
+                message: 'Update Home Page',
                 user: {
                     name: '年糕小豆汤',
                     email: 'ooiss@qq.com'
