@@ -6,6 +6,7 @@ import avatarUrl from '../images/avatar.png'
 import IconGithub from '../images/fa-github.svg'
 import IconWeibo from '../images/fa-weibo.svg'
 import IconMail from '../images/fa-envelope.svg'
+import IconBlog from '../images/fa-book.svg'
 
 export default class Card extends React.Component {
     hanlderClick() {
@@ -23,19 +24,31 @@ export default class Card extends React.Component {
                            pClassName={typedStyle.placeholder}
                            sClassName={typedStyle.strong}
                            placeholder={"you can find me on"}>
+                        Email,
                         Github,
                         Weibo,
                         Blog
                     </Typed>
                     <ul className={style.accounts}>
                         <li>
-                            <IconMail />
+                            <a href='mailto:ooiss@qq.com'>
+                                <IconMail />
+                            </a>
                         </li>
                         <li>
-                            <IconGithub />
+                            <a href='http://github.com/iamcco'>
+                                <IconGithub />
+                            </a>
                         </li>
                         <li>
-                            <IconWeibo />
+                            <a href='http://weibo.com/iamcco'>
+                                <IconWeibo />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='http://blog.yuuko.cn'>
+                                <IconBlog />
+                            </a>
                         </li>
                     </ul>
                 </div>
