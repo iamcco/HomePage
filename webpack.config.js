@@ -56,6 +56,9 @@ if(isProduction) {
                 user: {
                     name: '年糕小豆汤',
                     email: 'ooiss@qq.com'
+                },
+                logger: function(message) {
+                    console.log(message);
                 }
             }
         })
