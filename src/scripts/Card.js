@@ -52,6 +52,11 @@ export default class Card extends React.Component {
                         </li>
                     </ul>
                 </div>
+                <div className={style.idCard}>
+                  <a href="http://www.beian.miit.gov.cn" target="_blank" ref="noopener">
+                    京ICP备15050638号-1
+                  </a>
+                </div>
             </section>
         )
     }

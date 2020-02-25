@@ -68,3 +68,16 @@
     height: 40px;
 }
 
+.idCard {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.idCard a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
